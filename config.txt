@@ -1,0 +1,5 @@
+TOKEN=7752930706:AAEeY8KhjX2HuuRXEm9SGlqZsBVYOCs7x7U
+ADMIN_IDS=1086796062, 1036331890
+CHANNEL_ID=-1002534375147
+CHANNEL_LINK=https://t.me/+0wj3N9ICDoVmNGMy
+MONGODB_URI=mongodb+srv://diggerbot:flWdfygaqTaxTwfe@cluster0.4nojsra.mongodb.net/?retryWrites=true&w=majority
