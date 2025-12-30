@@ -16,7 +16,7 @@ if not MONGODB_URI:
     raise ValueError("MONGODB_URI not set in environment")
 
 mongo_client = motor.motor_asyncio.AsyncIOMotorClient(MONGODB_URI)
-db = mongo_client['dbtest']
+db = mongo_client['bot_db']
 
 
 async def ensure_singleton_documents():
@@ -684,4 +684,5 @@ async def get_bot_statistics() -> dict:
 
 async def load_initial_maintenance() -> bool:
     doc = await db['config'].find_one({'_id': 'maintenance'})
+
     return bool(doc.get('value')) if doc else False
